@@ -118,7 +118,7 @@ export default function Contact() {
       <div className="text-center text-gray-500 mt-12">
         Or reach out on
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/ayush-grover-55b44a281/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-green-400 ml-1 underline hover:text-green-500 transition"
@@ -127,7 +127,7 @@ export default function Contact() {
         </a>
         {' '}or{' '}
         <a
-          href="mailto:youremail@example.com"
+          href="mailto:agayushgrover2898@gmail.com"
           className="text-green-400 underline hover:text-green-500 transition"
         >
           Email
