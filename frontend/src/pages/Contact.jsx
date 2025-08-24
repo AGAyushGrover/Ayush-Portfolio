@@ -15,7 +15,7 @@ export default function Contact() {
     setStatus('Sending...');
 
     try {
-      const response = await fetch('https://ayushgrover1120.onrender.com//contact', {
+      const response = await fetch('https://ayushgrover1120.onrender.com/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
