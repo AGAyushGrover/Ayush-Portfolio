@@ -9,23 +9,31 @@ export default function Projects() {
   const projects = [
     {
       img: project1,
-      title: 'Portfolio Website',
-      year: '2024',
-      link: 'https://your-live-link.com',
-      github: 'https://github.com/yourusername/portfolio',
+      title: 'Vamika',
+      year: '2025',
+      link: 'https://vamika1120mj.vercel.app',
+      github: 'https://github.com/AGAyushGrover/vamika1120mj',
       description:
         'A modern portfolio to showcase my work and skills, built with React, Tailwind CSS and Framer Motion.',
     },
     {
       img: project2,
       title: 'E-commerce App',
-      year: '2024',
-      link: 'https://your-ecommerce-live.com',
-      github: 'https://github.com/yourusername/ecommerce',
+      year: '2025',
+      link: 'https://kutumb-ruddy.vercel.app',
+      github: 'https://github.com/AGAyushGrover/Kutumb',
       description:
-        'A full-stack E-commerce platform with secure payments, product listings and user authentication using MERN stack.',
+        'Kutumb is a modern real estate and architecture web application that helps people discover vendors, workers, and materials for building their dream homes.',
     },
-    // Add more projects if needed
+    {
+      img: project3,
+      title: 'Portfolio',
+      year: '2025',
+      link: 'https://ayushgrover1120.vercel.app/',
+      github: 'https://github.com/AGAyushGrover/Ayush-Portfolio',
+      description:
+        'A modern portfolio to showcase my work and skills, built with React, Tailwind CSS etc. using MERN stack.',
+    }
   ];
 
   const techStack = [
