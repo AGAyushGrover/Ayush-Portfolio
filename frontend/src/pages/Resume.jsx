@@ -1,12 +1,21 @@
-import { motion } from 'framer-motion';
-import Navbar from '../components/Navbar';
-import profilePic from '../assets/img2.png'; // your profile pic
-import porImage from '../assets/por-image.png';    // your POR image
-import { 
-  FaReact, FaNodeJs, FaPython, FaDatabase, FaHtml5, FaCss3Alt, FaJs, 
-  FaGitAlt, FaLinux, FaDocker, FaNpm 
-} from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiTailwindcss } from 'react-icons/si';
+import { motion } from "framer-motion";
+import Navbar from "../components/Navbar";
+import profilePic from "../assets/img2.png"; // your profile pic
+import porImage from "../assets/por-image.png"; // your POR image
+import {
+  FaReact,
+  FaNodeJs,
+  FaPython,
+  FaDatabase,
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaGitAlt,
+  FaLinux,
+  FaDocker,
+  FaNpm,
+} from "react-icons/fa";
+import { SiMongodb, SiExpress, SiTailwindcss } from "react-icons/si";
 
 export default function Resume() {
   const fadeIn = {
@@ -46,7 +55,8 @@ export default function Resume() {
           variants={fadeIn}
           custom={2}
         >
-          Explore my education, experience, technical skills, and leadership. Each section is interactive — hover over items for a subtle highlight.
+          Explore my education, experience, technical skills, and leadership.
+          Each section is interactive — hover over items for a subtle highlight.
         </motion.p>
       </section>
 
@@ -67,18 +77,35 @@ export default function Resume() {
           <div className="relative ml-10 space-y-8">
             <div className="relative">
               <div className="absolute -left-10 top-1 w-4 h-4 bg-green-400 rounded-full animate-pulse"></div>
-              <p className="text-white font-semibold">B.Tech in Computer Engineering</p>
-              <p className="text-gray-400 text-sm">Delhi Technological University — CGPA 7.45</p>
+              <div className="flex justify-between items-center">
+                <p className="text-white font-semibold">
+                  B.Tech in Computer Engineering
+                </p>
+                <p className="text-green-400 text-lg">2026</p>
+              </div>
+              <p className="text-gray-400 text-sm">
+                Delhi Technological University — CGPA 7.79
+              </p>
             </div>
             <div className="relative">
               <div className="absolute -left-10 top-1 w-4 h-4 bg-green-400 rounded-full animate-pulse"></div>
-              <p className="text-white font-semibold">Class XII</p>
-              <p className="text-gray-400 text-sm">St. Xavier’s Senior Secondary School — 90%</p>
+              <div className="flex justify-between items-center">
+                <p className="text-white font-semibold">Class XII</p>
+                <p className="text-green-400 text-lg">2022</p>
+              </div>
+              <p className="text-gray-400 text-sm">
+                St. Xavier’s Senior Secondary School — 90%
+              </p>
             </div>
             <div className="relative">
               <div className="absolute -left-10 top-1 w-4 h-4 bg-green-400 rounded-full animate-pulse"></div>
-              <p className="text-white font-semibold">Class X</p>
-              <p className="text-gray-400 text-sm">St. Xavier’s Senior Secondary School — 94%</p>
+              <div className="flex justify-between items-center">
+                <p className="text-white font-semibold">Class X</p>
+                <p className="text-green-400 text-lg">2020</p>
+              </div>
+              <p className="text-gray-400 text-sm">
+                St. Xavier’s Senior Secondary School — 94%
+              </p>
             </div>
           </div>
         </motion.div>
@@ -95,51 +122,73 @@ export default function Resume() {
           <h2 className="text-3xl font-bold text-green-400 mb-4">Experience</h2>
           <ul className="space-y-4 text-lg">
             <li>
-              <p className="text-white font-semibold">LokaChakra — Software Development Intern</p>
-              <ul className="list-disc list-inside text-gray-400 text-base mt-2 space-y-1">
-                <li>Developed dynamic KYC flow using TypeScript and Next.js</li>
-                <li>Implemented backend APIs and data storage using MySQL</li>
-                <li>Built dynamic profile registration and verification modules</li>
-              </ul>
-              <p className="text-gray-400 text-base">Jun 2025 — Aug 2025</p>
+              <div className="relative">
+                <div className="flex justify-between items-center">
+                  <p className="text-white font-semibold">
+                    LokaChakra — Software Development Intern
+                  </p>
+                  <p className="text-green-400 text-lg">Jun 2025 — Aug 2025</p>
+                </div>
+                <ul className="list-disc list-inside text-gray-400 text-lg mt-2 space-y-1">
+                  <li>
+                    Developed dynamic KYC flow using TypeScript and Next.js
+                  </li>
+                  <li>
+                    Implemented backend APIs for online KYC using DigiLocker
+                  </li>
+                  <li>
+                    Built dynamic profile registration and verification modules
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </motion.div>
 
         {/* Skills with icons */}
         {/* Skills with icons */}
-      <motion.div
-        className="relative bg-white/5 p-8 rounded-lg border border-green-400/20 hover:border-green-400/70 transition backdrop-blur-md col-span-2 overflow-hidden"
-        initial="hidden"
-        whileInView="visible"
-        variants={fadeIn}
-        viewport={{ once: true }}
-        custom={3}
-      >
-        <h2 className="text-2xl font-bold text-green-400 mb-4">Technical Skills and Courses</h2>
-        <p className="text-gray-400 mb-4">Languages: C++, Scala, Python, SQL</p>
-        <p className="text-gray-400 mb-4">Web: HTML, CSS, JS, React, Node.js, Tailwind</p>
-        <p className="text-gray-400 mb-4">Libraries & Tools: NumPy, PyTorch, MySQL, Git, Docker, Linux</p>
-        <p className="text-gray-400 mb-4">Courses: DSA, OS, DBMS, AI, ML, Computer Vision</p>
+        <motion.div
+          className="relative bg-white/5 p-8 rounded-lg border border-green-400/20 hover:border-green-400/70 transition backdrop-blur-md col-span-2 overflow-hidden"
+          initial="hidden"
+          whileInView="visible"
+          variants={fadeIn}
+          viewport={{ once: true }}
+          custom={3}
+        >
+          <h2 className="text-2xl font-bold text-green-400 mb-4">
+            Technical Skills and Courses
+          </h2>
+          <p className="text-gray-400 mb-4">
+            Languages: C++, Scala, Python, SQL
+          </p>
+          <p className="text-gray-400 mb-4">
+            Web: HTML, CSS, JS, React, Node.js, Tailwind
+          </p>
+          <p className="text-gray-400 mb-4">
+            Libraries & Tools: NumPy, PyTorch, MySQL, Git, MongoDB
+          </p>
+          <p className="text-gray-400 mb-4">
+            Courses: DSA, OS, DBMS, AI, ML, Computer Vision
+          </p>
 
-        {/* Random scattered icons collage on right side */}
-        <div className="absolute top-0 right-0 w-60 h-full pointer-events-none">
-          <FaReact className="absolute top-4 right-8 text-green-400 text-3xl rotate-12 hover:text-green-500 transition" />
-          <FaNodeJs className="absolute top-16 right-0 text-green-400 text-3xl -rotate-6 hover:text-green-500 transition" />
-          <FaPython className="absolute top-32 right-12 text-green-400 text-3xl rotate-3 hover:text-green-500 transition" />
-          <SiMongodb className="absolute top-48 right-6 text-green-400 text-3xl -rotate-3 hover:text-green-500 transition" />
-          <SiExpress className="absolute top-64 right-14 text-green-400 text-3xl rotate-6 hover:text-green-500 transition" />
-          <SiTailwindcss className="absolute top-80 right-4 text-green-400 text-3xl -rotate-12 hover:text-green-500 transition" />
-          <FaHtml5 className="absolute top-10 right-28 text-green-400 text-3xl -rotate-10 hover:text-green-500 transition" />
-          <FaCss3Alt className="absolute top-24 right-32 text-green-400 text-3xl rotate-8 hover:text-green-500 transition" />
-          <FaJs className="absolute top-52 right-28 text-green-400 text-3xl rotate-2 hover:text-green-500 transition" />
-          <FaGitAlt className="absolute bottom-20 right-20 text-green-400 text-3xl -rotate-8 hover:text-green-500 transition" />
-          <FaLinux className="absolute top-72 right-24 text-green-400 text-3xl rotate-4 hover:text-green-500 transition" />
-          <FaDocker className="absolute bottom-12 right-10 text-green-400 text-3xl rotate-10 hover:text-green-500 transition" />
-          <FaNpm className="absolute top-96 right-16 text-green-400 text-3xl -rotate-6 hover:text-green-500 transition" />
-          <FaDatabase className="absolute bottom-8 right-32 text-green-400 text-3xl rotate-5 hover:text-green-500 transition" />
-        </div>
-      </motion.div>
+          {/* Random scattered icons collage on right side */}
+          <div className="absolute top-0 right-0 w-60 h-full pointer-events-none">
+            <FaReact className="absolute top-4 right-8 text-green-400 text-3xl rotate-12 hover:text-green-500 transition" />
+            <FaNodeJs className="absolute top-16 right-0 text-green-400 text-3xl -rotate-6 hover:text-green-500 transition" />
+            <FaPython className="absolute top-32 right-12 text-green-400 text-3xl rotate-3 hover:text-green-500 transition" />
+            <SiMongodb className="absolute top-48 right-6 text-green-400 text-3xl -rotate-3 hover:text-green-500 transition" />
+            <SiExpress className="absolute top-64 right-14 text-green-400 text-3xl rotate-6 hover:text-green-500 transition" />
+            <SiTailwindcss className="absolute top-80 right-4 text-green-400 text-3xl -rotate-12 hover:text-green-500 transition" />
+            <FaHtml5 className="absolute top-10 right-28 text-green-400 text-3xl -rotate-10 hover:text-green-500 transition" />
+            <FaCss3Alt className="absolute top-24 right-32 text-green-400 text-3xl rotate-8 hover:text-green-500 transition" />
+            <FaJs className="absolute top-52 right-28 text-green-400 text-3xl rotate-2 hover:text-green-500 transition" />
+            <FaGitAlt className="absolute bottom-20 right-20 text-green-400 text-3xl -rotate-8 hover:text-green-500 transition" />
+            <FaLinux className="absolute top-72 right-24 text-green-400 text-3xl rotate-4 hover:text-green-500 transition" />
+            <FaDocker className="absolute bottom-12 right-10 text-green-400 text-3xl rotate-10 hover:text-green-500 transition" />
+            <FaNpm className="absolute top-96 right-16 text-green-400 text-3xl -rotate-6 hover:text-green-500 transition" />
+            <FaDatabase className="absolute bottom-8 right-32 text-green-400 text-3xl rotate-5 hover:text-green-500 transition" />
+          </div>
+        </motion.div>
 
         {/* POR with image more right */}
         <motion.div
@@ -151,14 +200,27 @@ export default function Resume() {
           custom={4}
         >
           <div className="flex-1">
-            <h2 className="text-2xl font-bold text-green-400 mb-4">Position of Responsibility</h2>
+            <h2 className="text-2xl font-bold text-green-400 mb-4">
+              Position of Responsibility
+            </h2>
             <ul className="space-y-4">
               <li>
-                <p className="text-white font-semibold">Secretary — CS Chapter IEEE DTU</p>
+                <p className="text-white font-semibold">
+                  Secretary — CS Chapter IEEE DTU
+                </p>
                 <ul className="list-disc list-inside text-gray-400 text-base mt-2 space-y-1">
-                  <li>Organized VIHAAN 8.O, Annual Hackathon DTU, Technical and Operational Lead, benefiting 1500+ students.</li>
-                  <li>INVICTUS’25, Annual tech fest of DTU, organized events like BITS, CASEQUEST with 200+ participants.</li>
-                  <li>Successfully organized VIHAAN 7.O Hackathon, impacting over 1000 students.</li>
+                  <li>
+                    Organized VIHAAN 8.O, Annual Hackathon DTU, Technical and
+                    Operational Lead, benefiting 1500+ students.
+                  </li>
+                  <li>
+                    INVICTUS’25, Annual tech fest of DTU, organized events like
+                    BITS, CASEQUEST with 200+ participants.
+                  </li>
+                  <li>
+                    Successfully organized VIHAAN 7.O Hackathon, impacting over
+                    1000 students.
+                  </li>
                 </ul>
               </li>
             </ul>

@@ -3,13 +3,14 @@ import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaNpm } from 'react-icons/fa';
 import { SiTailwindcss, SiMongodb, SiExpress } from 'react-icons/si';
 import project1 from '../assets/project1.png';
 import project2 from '../assets/project2.png';
+import project3 from '../assets/project3.png';
 import Navbar from '../components/Navbar';
 
 export default function Projects() {
   const projects = [
     {
       img: project1,
-      title: 'Vamika',
+      title: 'VAMIKA - Disaster Manager',
       year: '2025',
       link: 'https://vamika1120mj.vercel.app',
       github: 'https://github.com/AGAyushGrover/vamika1120mj',
@@ -18,7 +19,7 @@ export default function Projects() {
     },
     {
       img: project2,
-      title: 'E-commerce App',
+      title: 'KUTUMB - One Stop Destination for your Dream Home',
       year: '2025',
       link: 'https://kutumb-ruddy.vercel.app',
       github: 'https://github.com/AGAyushGrover/Kutumb',
@@ -74,8 +75,8 @@ export default function Projects() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
             >
               {/* Top Black Bar with Name */}
-              <div className="absolute top-0 left-0 w-full bg-black bg-opacity-80 flex justify-between items-center px-6 py-3 z-10">
-                <div className="text-green-400 font-semibold text-sm">
+              <div className="absolute top-0 left-0 w-full bg-black/80 bg-opacity-80 flex justify-between items-center px-6 py-3 z-10">
+                <div className="text-green-400 font-semibold text-lg">
                   {proj.title}
                 </div>
                 <div className="text-white/60 text-sm">{proj.year}</div>
@@ -89,7 +90,7 @@ export default function Projects() {
               />
 
               {/* Project Description */}
-              <div className="p-6 text-gray-300 text-sm">{proj.description}</div>
+              <div className="p-6 text-gray-300 text-lg">{proj.description}</div>
 
               {/* Buttons Below */}
               <div className="flex justify-center gap-4 pb-6">
